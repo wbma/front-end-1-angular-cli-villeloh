@@ -1,3 +1,7 @@
+// This was ultimately unnecessary, because I finally learned the correct way to size things (with :host)...
+// I'm leaving this here because I haven't the heart to delete it, having spend some precious hours on it :l
+// (Not used anywhere atm.)
+
 import { Directive, ElementRef, AfterViewChecked, Input } from '@angular/core';
 
 @Directive({
@@ -28,9 +32,9 @@ export class PassDownWidthDirective implements AfterViewChecked {
       return;
     }
 
-    header.setAttribute('style', `width: ${width}px;`);
-    nav.setAttribute('style', `width: ${width}px;`);
-    footer.setAttribute('style', `width: ${width}px;`);
+    header.setAttribute('style', `width: ${width};`);
+    nav.setAttribute('style', `width: ${width};`);
+    footer.setAttribute('style', `width: ${width};`);
   }
 
 }

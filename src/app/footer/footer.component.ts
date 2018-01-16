@@ -11,7 +11,12 @@ import { Component, OnInit } from '@angular/core';
     margin-top: 2rem;
     text-align:center;
     color: white;
-  }`]
+  }
+  :host {
+    width: 100%;
+  }
+
+  `]
 })
 export class FooterComponent implements OnInit {
 

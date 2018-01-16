@@ -7,9 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
   `,
   styles: [`.header {
     background-color: #1a1b1c;
-    height: 9rem;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align:center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+
+  :host {
+    height: 20%;
+    width: 100%;
   }`]
 })
 export class HeaderComponent implements OnInit {

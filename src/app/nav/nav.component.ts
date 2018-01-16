@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: [`.nav {
     background-color: gray;
-    height: 3rem;
+    height: 100%;
     font-size: 2rem;
     color: white;
-    text-align:center;
-  }`]
+    text-align: center;
+  }
+  :host {
+    width: 100%;
+    height: 8%;
+  ]`]
 })
 export class NavComponent implements OnInit {
 

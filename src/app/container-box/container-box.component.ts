@@ -21,6 +21,10 @@ import { stringify } from '@angular/core/src/render3/util';
 
             display: flex;
             flex-wrap: wrap;
+
+            :host {
+              height: 100%;
+            }
         }`]
 })
 export class ContainerBoxComponent implements OnInit {
