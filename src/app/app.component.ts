@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 
+import { ContainerBoxComponent } from './container-box/container-box.component';
+
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<div class={{appRoot}}>
+              <app-container appPassDownWidth={{topLevelWidth}}></app-container>
+            </div>`,
+  styles: [`.appRoot {
+    width: 1920px;
+  }`]
 })
 export class AppComponent {
-  title = 'app';
+
+  appRoot = 'appRoot';
+  topLevelWidth = '1920';
+
 }
