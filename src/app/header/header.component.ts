@@ -3,7 +3,9 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-    <div class={{header}}>Header</div>
+    <div class={{header}}>Header
+    <img [src]="headerPicUrl" width="100%" height="100%">
+    </div>
   `,
   styles: [`.header {
     background-color: #1a1b1c;
@@ -22,6 +24,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   header = 'header';
+  width = this.width;
+  height = this.height;
+
+  @Input() headerPicUrl: string;
 
   constructor() { }
 

@@ -3,25 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ContainerBoxComponent } from './container-box/container-box.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { NavComponent } from './nav/nav.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
-import { PassDownWidthDirective } from './pass-down-width.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContainerBoxComponent,
     HeaderComponent,
     MainComponent,
     NavComponent,
     SidebarComponent,
-    FooterComponent,
-    PassDownWidthDirective
+    FooterComponent
   ],
   imports: [
     BrowserModule
